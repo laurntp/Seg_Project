@@ -218,4 +218,8 @@ dependencies:
     - simpleitk==2.1.1
     - torchio==0.18.71
     - wrapt==1.13.3
-prefix: /home/ngaggion/anaconda3/envs/torch
+    
+  
+    
+    
+prefix: C:\Users\Laurent\miniconda3\envs\torch
