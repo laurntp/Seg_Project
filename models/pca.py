@@ -59,11 +59,11 @@ class DecoderPCA(nn.Module):
         device = config['device']
         
         if config['extended']:
-            self.matrix = np.load('models/pca_components_ext.npy')
-            self.mean = np.load('models/pca_mean_ext.npy')
+            self.matrix = np.load('../models/pca_components_ext.npy')
+            self.mean = np.load('../models/pca_mean_ext.npy')
         else:
-            self.matrix = np.load('models/pca_components_JSRT.npy')
-            self.mean = np.load('models/pca_mean_JSRT.npy')
+            self.matrix = np.load('../models/pca_components_JSRT.npy')
+            self.mean = np.load('../models/pca_mean_JSRT.npy')
 
         self.matrix = torch.from_numpy(self.matrix).float().to(device)
         self.mean = torch.from_numpy(self.mean).float().to(device)
